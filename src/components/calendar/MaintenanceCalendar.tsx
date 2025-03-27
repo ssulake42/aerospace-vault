@@ -133,8 +133,9 @@ const MaintenanceCalendar: React.FC<MaintenanceCalendarProps> = ({ events }) => 
             onMonthChange={setCurrentMonth}
             className="rounded-md border"
             components={{
-              Day: ({ day, selected }) => {
-                const date = day.date;
+              Day: (props) => {
+                // Fix: Extract date from props correctly instead of using day.date
+                const date = props.date;
                 const dayEvents = eventsForDate(date);
                 const isCurrentMonth = isSameMonth(date, currentMonth);
                 

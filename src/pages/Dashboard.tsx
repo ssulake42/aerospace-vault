@@ -20,7 +20,7 @@ import {
   AlertCircle,
   ArrowUpRight,
   ArrowDownRight,
-  Tool,
+  Wrench, // Replaced Tool with Wrench icon
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { ScrollArea } from '@/components/ui/scroll-area';
@@ -81,7 +81,7 @@ const Dashboard = () => {
             title="Items in Maintenance"
             value={inventoryStats.maintenanceItems}
             description="Currently under service"
-            icon={<Tool />}
+            icon={<Wrench />} {/* Changed from Tool to Wrench icon */}
           />
         </div>
         
