@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useAuth } from '../context/AuthContext';
 import Layout from '../components/layout/Layout';
@@ -80,7 +81,7 @@ const Dashboard = () => {
             title="Items in Maintenance"
             value={inventoryStats.maintenanceItems}
             description="Currently under service"
-            icon={<Wrench />} {/* Changed from Tool to Wrench icon */}
+            icon={<Wrench />} 
           />
         </div>
         
